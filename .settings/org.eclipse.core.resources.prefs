@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+encoding//outliers/FindNolinearOutliersUsingMahalanobisDistance.py=utf-8
 encoding//outliers/FindOutliersUsingMahalanobisDistance.py=utf-8
 encoding//outliers/FindOutliersUsingZScore.py=utf-8
 encoding//outliers/__init__.py=utf-8
