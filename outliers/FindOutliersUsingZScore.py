@@ -14,7 +14,7 @@ print hw
 from sklearn import preprocessing
 from matplotlib import pyplot as plt
 #scale 数据进行标准化    公式为：(X-mean)/std  将数据按按列减去其均值，并处以其方差   结果是所有数据都聚集在0附近，方差为1。
-is_height_outlier = abs(preprocessing.scale(hw['Height_cm'])) > 2 #线性归一化    数据中心的标准偏差与2比较
+is_height_outlier = abs(preprocessing.scale(hw['Height_cm'])) > 2 #线性归一化    数据中心的标准偏差与2比较(建议用3比较)
 is_weight_outlier = abs(preprocessing.scale(hw['Weight_kg'])) > 2
 is_outlier = is_height_outlier | is_weight_outlier#按位或 表示两个变量中有一位是异常的 本组数据（体重，身高）异常    is_outlier是数组，值为True或False
 color = ['g', 'r']
